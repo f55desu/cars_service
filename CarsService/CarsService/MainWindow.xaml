@@ -5,8 +5,100 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CarsService"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Сервис" Height="768" Width="1024">
     <Grid>
-        
+        <DataGrid x:Name="ScheduleTable"
+                  AutoGenerateColumns="False"
+                  Margin="0,382,-0.4,0.4">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="№"
+                                    FontSize="24"
+                                    Width="70"
+                                    Binding="{Binding Row_Number}" 
+                                    IsReadOnly="True"/>
+                <DataGridTextColumn Header="Гос. номер" 
+                                    FontSize="24"
+                                    Width="150"
+                                    Binding="{Binding Sched_Obj.DAY_OF_WEEK}" 
+                                    IsReadOnly="True"/>
+                <DataGridTextColumn Header="Год выпуска"
+                                    FontSize="24"
+                                    Width="100"
+                                    Binding="{Binding Sched_Obj.TIME}" 
+                                    IsReadOnly="True" 
+                                    CanUserSort="True"/>
+                <DataGridTextColumn Header="Марка"
+                                    FontSize="24" Width="100"
+                                    Binding="{Binding Sched_Obj.Disciplines.NAME}"
+                                    IsReadOnly="True"/>
+                <DataGridTextColumn Header="Модель"
+                                    Width="200"
+                                    FontSize="24"
+                                    Binding="{Binding TeacherShortName}"
+                                    IsReadOnly="True"/>
+                <DataGridTextColumn Header="Цвет"
+                                    Width="110"
+                                    FontSize="24"
+                                    Binding="{Binding Sched_Obj.Audiences.AUDIENCE_NUMBER}"
+                                    IsReadOnly="True"/>
+                <DataGridTextColumn Header="Ф.И.О. Владельца"
+                                    Width="280"
+                                    FontSize="24"
+                                    Binding="{Binding Sched_Obj.KIND}"
+                                    IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button Content="Ремонт"
+        Click="Repair"
+        HorizontalAlignment="Left" 
+        Margin="10,63,0,0"
+        FontSize="25"
+        VerticalAlignment="Top"
+        Width="252" Height="53"/>
+
+        <Label Content="Другие таблицы:"
+        HorizontalAlignment="Left"
+        HorizontalContentAlignment="Center"
+        Margin="10,10,0,0"
+
+        FontSize="28"
+        VerticalAlignment="Top"
+        Width="241"/>
+        <Button Content="Типы обслуживания"
+            HorizontalAlignment="Left" 
+            Margin="10,155,0,0"
+            FontSize="25"
+            VerticalAlignment="Top"
+            Width="252" Height="53"/>
+        <Label Content="Таблица автомобилей:"
+            HorizontalAlignment="Left"
+            HorizontalContentAlignment="Center"
+            Margin="354,10,0,0"
+
+            FontSize="28"
+            VerticalAlignment="Top"
+            Width="303"/>
+        <Button Content="Добавление"
+            Click="Car_Add"
+            HorizontalAlignment="Left" 
+            Margin="371,63,0,0"
+            FontSize="25"
+            VerticalAlignment="Top"
+            Width="252" Height="53"/>
+        <Button Content="Изменение"
+            Click="Car_Edit"
+            HorizontalAlignment="Left" 
+            Margin="371,155,0,0"
+            FontSize="25"
+            VerticalAlignment="Top"
+            Width="252" Height="53"/>
+        <Button Content="Удаление"
+            Click="Car_Delete"
+            HorizontalAlignment="Left" 
+            Margin="371,251,0,0"
+            FontSize="25"
+            VerticalAlignment="Top"
+            Width="252" Height="53"/>
     </Grid>
 </Window>
