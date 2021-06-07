@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\f55do\Source\Repos\cars_service\CarsService\CarsService\App.xaml
-3-1647861906
+9-1631677627
 
-15-1378213786
+21-367310222
 19-1539913327
-MainWindow.xaml;RepairsTable.xaml;ServiceTable.xaml;
+Dialogs\CarAdd.xaml;Dialogs\CarEdit.xaml;Dialogs\RepairAdd.xaml;Dialogs\RepairEdit.xaml;Dialogs\ServiceAdd.xaml;Dialogs\ServiceEdit.xaml;MainWindow.xaml;RepairsTable.xaml;ServiceTable.xaml;
 
 True
 

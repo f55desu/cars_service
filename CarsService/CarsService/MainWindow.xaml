@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CarsService"
         mc:Ignorable="d"
-        Title="Сервис" Height="768" Width="1024">
+        Title="Сервис" Height="768" Width="1024" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
     <Grid>
         <DataGrid x:Name="CarsTable"
                   AutoGenerateColumns="False"
@@ -79,26 +79,26 @@
             FontSize="28"
             VerticalAlignment="Top"
             Width="303"/>
-        <Button Content="Добавление"
+        <Button Content="Добавить"
             Click="Car_Add"
             HorizontalAlignment="Left" 
-            Margin="371,63,0,0"
+            Margin="403,64,0,0"
             FontSize="25"
             VerticalAlignment="Top"
-            Width="252" Height="53"/>
-        <Button Content="Изменение"
+            Width="212" Height="53"/>
+        <Button Content="Изменить"
             Click="Car_Edit"
             HorizontalAlignment="Left" 
-            Margin="371,155,0,0"
+            Margin="403,156,0,0"
             FontSize="25"
             VerticalAlignment="Top"
-            Width="252" Height="53"/>
-        <Button Content="Удаление"
+            Width="212" Height="53"/>
+        <Button Content="Удалить"
             Click="Car_Delete"
             HorizontalAlignment="Left" 
-            Margin="371,251,0,0"
+            Margin="403,252,0,0"
             FontSize="25"
             VerticalAlignment="Top"
-            Width="252" Height="53"/>
+            Width="212" Height="53"/>
     </Grid>
 </Window>

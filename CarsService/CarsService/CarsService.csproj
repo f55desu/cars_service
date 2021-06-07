@@ -74,6 +74,24 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Dialogs\CarAdd.xaml.cs">
+      <DependentUpon>CarAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\CarEdit.xaml.cs">
+      <DependentUpon>CarEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\RepairAdd.xaml.cs">
+      <DependentUpon>RepairAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\RepairEdit.xaml.cs">
+      <DependentUpon>RepairEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\ServiceAdd.xaml.cs">
+      <DependentUpon>ServiceAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\ServiceEdit.xaml.cs">
+      <DependentUpon>ServiceEdit.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Models\CarM.cs" />
     <Compile Include="Models\RepairM.cs" />
     <Compile Include="Models\ServiceM.cs" />
@@ -87,6 +105,30 @@
     <Compile Include="Tables\Cars.cs" />
     <Compile Include="Tables\Repairs.cs" />
     <Compile Include="Tables\Services.cs" />
+    <Page Include="Dialogs\CarAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dialogs\CarEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dialogs\RepairAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dialogs\RepairEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dialogs\ServiceAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dialogs\ServiceEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
