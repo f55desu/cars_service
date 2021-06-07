@@ -1,0 +1,5 @@
+C:\Users\f55do\source\repos\CarsService\CarsService\obj\Debug\CarsService.csprojAssemblyReference.cache
+C:\Users\f55do\source\repos\CarsService\CarsService\obj\Debug\Main.g.cs
+C:\Users\f55do\source\repos\CarsService\CarsService\obj\Debug\App.g.cs
+C:\Users\f55do\source\repos\CarsService\CarsService\obj\Debug\CarsService_MarkupCompile.cache
+C:\Users\f55do\source\repos\CarsService\CarsService\obj\Debug\CarsService_MarkupCompile.lref
