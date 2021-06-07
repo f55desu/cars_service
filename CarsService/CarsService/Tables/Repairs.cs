@@ -1,8 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace CarsService.Tables
 {
-    class Repair
+    public class Repairs
     {
         [Key]
         public int _repair_id { get; set; }

@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Сервис" Height="768" Width="1024">
     <Grid>
-        <DataGrid x:Name="ScheduleTable"
+        <DataGrid x:Name="CarsTable"
                   AutoGenerateColumns="False"
                   Margin="0,382,-0.4,0.4">
             <DataGrid.Columns>
@@ -19,32 +19,32 @@
                 <DataGridTextColumn Header="Гос. номер" 
                                     FontSize="24"
                                     Width="150"
-                                    Binding="{Binding Sched_Obj.DAY_OF_WEEK}" 
+                                    Binding="{Binding Car_Obj._gov_number}" 
                                     IsReadOnly="True"/>
                 <DataGridTextColumn Header="Год выпуска"
                                     FontSize="24"
                                     Width="100"
-                                    Binding="{Binding Sched_Obj.TIME}" 
+                                    Binding="{Binding Car_Obj._year_of_issue}" 
                                     IsReadOnly="True" 
                                     CanUserSort="True"/>
                 <DataGridTextColumn Header="Марка"
                                     FontSize="24" Width="100"
-                                    Binding="{Binding Sched_Obj.Disciplines.NAME}"
+                                    Binding="{Binding Car_Obj._mark}"
                                     IsReadOnly="True"/>
                 <DataGridTextColumn Header="Модель"
                                     Width="200"
                                     FontSize="24"
-                                    Binding="{Binding TeacherShortName}"
+                                    Binding="{Binding Car_Obj._model}"
                                     IsReadOnly="True"/>
                 <DataGridTextColumn Header="Цвет"
                                     Width="110"
                                     FontSize="24"
-                                    Binding="{Binding Sched_Obj.Audiences.AUDIENCE_NUMBER}"
+                                    Binding="{Binding Car_Obj._colour}"
                                     IsReadOnly="True"/>
                 <DataGridTextColumn Header="Ф.И.О. Владельца"
                                     Width="280"
                                     FontSize="24"
-                                    Binding="{Binding Sched_Obj.KIND}"
+                                    Binding="{Binding Car_Obj._owner_name}"
                                     IsReadOnly="True"/>
             </DataGrid.Columns>
         </DataGrid>
@@ -70,7 +70,7 @@
             Margin="10,155,0,0"
             FontSize="25"
             VerticalAlignment="Top"
-            Width="252" Height="53"/>
+            Width="252" Height="53" Click="Service"/>
         <Label Content="Таблица автомобилей:"
             HorizontalAlignment="Left"
             HorizontalContentAlignment="Center"

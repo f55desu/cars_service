@@ -2,7 +2,7 @@
 
 namespace CarsService.Tables
 {
-    class Car
+    public class Cars
     {
         [Key]
         public int _car_id { get; set; }

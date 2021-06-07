@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\f55do\Source\Repos\cars_service\CarsService\CarsService\App.xaml
-11151548125
+3-1647861906
 
-10-1623783064
+15-1378213786
 19-1539913327
-MainWindow.xaml;
+MainWindow.xaml;RepairsTable.xaml;ServiceTable.xaml;
 
-False
+True
 

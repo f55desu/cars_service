@@ -74,10 +74,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Resources\dbContext.cs" />
-    <Compile Include="Tables\Car.cs" />
-    <Compile Include="Tables\Repair.cs" />
-    <Compile Include="Tables\Service.cs" />
+    <Compile Include="Models\CarM.cs" />
+    <Compile Include="Models\RepairM.cs" />
+    <Compile Include="Models\ServiceM.cs" />
+    <Compile Include="RepairsTable.xaml.cs">
+      <DependentUpon>RepairsTable.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Context.cs" />
+    <Compile Include="ServiceTable.xaml.cs">
+      <DependentUpon>ServiceTable.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tables\Cars.cs" />
+    <Compile Include="Tables\Repairs.cs" />
+    <Compile Include="Tables\Services.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -90,6 +99,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="RepairsTable.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ServiceTable.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -114,13 +131,14 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="Resources\Database\Services.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\Database\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

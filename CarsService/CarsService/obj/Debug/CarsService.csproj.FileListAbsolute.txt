@@ -27,3 +27,6 @@ C:\Users\f55do\Source\Repos\cars_service\CarsService\CarsService\obj\Debug\CarsS
 C:\Users\f55do\Source\Repos\cars_service\CarsService\CarsService\obj\Debug\CarsService.csproj.CopyComplete
 C:\Users\f55do\Source\Repos\cars_service\CarsService\CarsService\obj\Debug\CarsService.exe
 C:\Users\f55do\Source\Repos\cars_service\CarsService\CarsService\obj\Debug\CarsService.pdb
+C:\Users\f55do\source\repos\cars_service\CarsService\CarsService\obj\Debug\RepairsTable.g.cs
+C:\Users\f55do\source\repos\cars_service\CarsService\CarsService\obj\Debug\RepairsTable.baml
+C:\Users\f55do\source\repos\cars_service\CarsService\CarsService\bin\Debug\Resources\Database\Services.db
